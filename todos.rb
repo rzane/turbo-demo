@@ -82,11 +82,9 @@ template :todo do
         <div><%= todo.completed_at.strftime('%b %e, %l:%M %p') %></div>
       <% else %>
         <div><%= todo.label %></div>
-        <div>
-          <form method="delete" action="/todos/<%= todo.id %>">
-            <button>Done</button>
-          </form>
-        </div>
+        <form method="delete" action="/todos/<%= todo.id %>">
+          <button>Done</button>
+        </form>
       <% end %>
     </article>
   HTML
