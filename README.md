@@ -4,6 +4,10 @@ A really tiny app built with Turbo.
 
 ### Development
 
+Install dependencies:
+
+    $ bundle install
+
 Start the development server:
 
     $ bundle exec rerun app.rb
