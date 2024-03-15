@@ -6,7 +6,7 @@ get '/people' do
   erb <<~HTML
     <nav>
       <ul>
-        <li><strong>Mini Turbo</strong></li>
+        <li><strong>Turbo Demo</strong></li>
         <li>People</li>
         <li><a href="/todos">Todo List</a></li>
       </ul>

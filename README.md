@@ -1,4 +1,4 @@
-# Mini Turbo
+# Turbo Demo
 
 A really tiny app built with Turbo.
 

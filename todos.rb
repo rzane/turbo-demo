@@ -5,7 +5,7 @@ get '/todos' do
     <section>
       <nav>
         <ul>
-          <li><strong>Mini Turbo</strong></li>
+          <li><strong>Turbo Demo</strong></li>
           <li><a href="/people">People</a></li>
           <li>Todo List</li>
         </ul>
