@@ -25,6 +25,7 @@ get '/people' do
           <div><%= person.name %></div>
           <div>
             <a href="/people/<%= person.id %>">View</a>
+            |
             <a href="/people/<%= person.id %>/edit" data-turbo-frame="modal">Edit</a>
           </div>
         </article>
@@ -62,7 +63,7 @@ get '/people/:id' do
           <dd><%= @person.birthday %></dd>
         </dl>
         <footer>
-          <a href="/">Back</a>
+          <a href="/people" data-turbo-frame="_top">Back</a>
         </footer>
       </article>
     </turbo-frame>
