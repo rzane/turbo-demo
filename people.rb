@@ -6,7 +6,8 @@ get '/people' do
   erb <<~HTML
     <nav>
       <ul>
-        <li><strong>People</strong></li>
+        <li><strong>Mini Turbo</strong></li>
+        <li>People</li>
         <li><a href="/todos">Todo List</a></li>
       </ul>
       <ul>
@@ -42,7 +43,7 @@ get '/people/new' do
     title: "Add Person"
   }
 
-  erb :form, layout: false, locals:
+  erb :person_form, layout: false, locals:
 end
 
 get '/people/:id' do
@@ -78,7 +79,7 @@ get '/people/:id/edit' do
     title: "Edit Person"
   }
 
-  erb :form, layout: false, locals:
+  erb :person_form, layout: false, locals:
 end
 
 post '/people' do
@@ -93,7 +94,7 @@ put '/people/:id' do
   redirect '/people'
 end
 
-template :form do
+template :person_form do
   <<~HTML
     <turbo-frame id="modal">
       <dialog open>

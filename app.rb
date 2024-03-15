@@ -5,19 +5,15 @@ require_relative 'todos'
 
 get '/' do
   erb <<~HTML
-    <h1>Mini Turbo</h1>
+    <nav>
+      <ul>
+        <li><strong>Mini Turbo</strong></li>
+        <li><a href="/people">People</a></li>
+        <li><a href="/todos">Todo List</a></li>
+      </ul>
+    </nav>
 
-    <section>
-      <h4>Turbo Frames</h4>
-      <p>The People app demonstrates the use of Turbo Frames.</p>
-      <a href="/people"><button>Let's go &raquo;</button></a>
-    </section>
-
-    <section>
-      <h4>Turbo Streams</h4>
-      <p>The Todo app demonstrates the use of Turbo Streams.</p>
-      <a href="/todos"><button>Let's go &raquo;</button></a>
-    </section>
+    <p>Choose a link from above to get started</p>
   HTML
 end
 
@@ -39,6 +35,12 @@ template :layout do
           justify-content: space-between;
         }
 
+        .empty {
+          display: none;
+        }
+        .empty:only-child {
+          display: block;
+        }
       </style>
     </head>
     <body>
