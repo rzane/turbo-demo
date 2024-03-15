@@ -36,7 +36,7 @@ get '/todos' do
     </section>
 
     <script type="module">
-      import autoAnimate from 'https://cdn.jsdelivr.net/npm/@formkit/auto-animate';
+      import autoAnimate from 'https://cdn.jsdelivr.net/npm/@formkit/auto-animate@0.8.1/+esm';
       autoAnimate(document.getElementById('pending'));
       autoAnimate(document.getElementById('completed'));
     </script>
