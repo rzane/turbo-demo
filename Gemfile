@@ -2,6 +2,8 @@
 
 source "https://rubygems.org"
 
-# gem "rails"
+gem "sinatra"
+gem "rackup"
+gem "puma"
+gem "rerun"
 
-gem "sinatra", "~> 4.0"
