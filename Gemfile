@@ -6,4 +6,5 @@ gem "sinatra"
 gem "rackup"
 gem "puma"
 gem "rerun"
-
+gem "sequel"
+gem "sqlite3"
